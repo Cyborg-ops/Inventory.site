@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Inventory Management</title>
+  </head>
+  <body>
+    <h1>INVENTORY</h1>
+    <center>
+      <button class="product" onclick="location.href='add_item.html'">
+        Add Product
+      </button>
+      <button class="viewproducts" onclick="location.href='view_items.html'">
+        View Products
+      </button>
+      <br /><br />
+      <h3>Product List</h3>
+
+      <table class="table" border="5" cellpadding="5">
+        <thead>
+          <tr>
+            <th class="product-label" id="product-name">Product Name</th>
+            <th class="price-label" id="price-name">Price</th>
+            <th class="quantity-label" id="quantity-name">Quantity</th>
+            <th class="action1-label" id="action1-name">Action 1</th>
+            <th class="action2-label" id="action2-name">Action 2</th>
+          </tr>
+          <tr>
+            <th>Coke</th>
+            <th>20</th>
+            <th>1</th>
+            <th><button class="btn-Update">Update</button></th>
+            <th><button class="btn-Delete">Delete</button></th>
+          </tr>
+          <tr>
+            <th>Pancit Canton</th>
+            <th>15</th>
+            <th>2</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="productTableBody"></tbody>
+      </table>
+    </center>
+  </body>
+</html>
